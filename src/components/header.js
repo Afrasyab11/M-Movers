@@ -11,8 +11,8 @@ export default class Header extends React.Component {
                     {/* <img className="navbar-brand rounded-circle" height={80} src={logo} alt="Logo" /> */}
                     <ul className="navbar-nav ">
                         <li className="nav-item text-light" >
-                            <p>Email: zkmovers112@gmail.com</p>
-                            <p>contact no : +971545599867</p>
+                            <p className="lh-1 m-1">Email: zkmovers112@gmail.com</p>
+                            <p className="lh-1">contact no : +971545599867</p>
                             {/* <Typewriter className="nav-link" words={['Email : zkmovers112@gmail.com']}
                                 loop={50}
                                 typeSpeed={70}
