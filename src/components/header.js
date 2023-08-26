@@ -11,7 +11,9 @@ export default class Header extends React.Component {
                     {/* <img className="navbar-brand rounded-circle" height={80} src={logo} alt="Logo" /> */}
                     <ul className="navbar-nav ">
                         <li className="nav-item text-light" >
-                            <Typewriter className="nav-link" words={['Email : zkmovers112@gmail.com']}
+                            <p>Email: zkmovers112@gmail.com</p>
+                            <p>contact no : +971545599867</p>
+                            {/* <Typewriter className="nav-link" words={['Email : zkmovers112@gmail.com']}
                                 loop={50}
                                 typeSpeed={70}
                                 deleteSpeed={100}
@@ -21,7 +23,7 @@ export default class Header extends React.Component {
                                 loop={50}
                                 typeSpeed={70}
                                 deleteSpeed={100}
-                                delaySpeed={5000} />
+                                delaySpeed={5000} /> */}
                         </li>
                         
                     </ul>

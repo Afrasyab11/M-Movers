@@ -48,7 +48,7 @@ export default class ReviewForm extends React.Component {
     return (
       <div className="container-fluid mt-4">
         <div className="row">
-          <div className="col-lg-6 col-sm-12 " data-aos="fade-left"  data-aos-duration="200">
+          <div className="col-lg-6 col-sm-12 " data-aos="flip-left">
             <form
               className="border border-primary rounded my-3 px-2 py-2"
               onSubmit={this.handleSubmit}
@@ -125,8 +125,7 @@ export default class ReviewForm extends React.Component {
               </div>
             </form>
           </div>
-          <div className="col-6 pt-3 d-none d-lg-block " data-aos="fade-down" data-aos-easing="ease-out-cubic"
-            data-aos-duration="200">
+          <div className="col-6 pt-3 d-none d-lg-block " data-aos="flip-left">
             <img className="img-fluid p-0 m-0" src={feedBack} alt="" />
           </div>
         </div>
