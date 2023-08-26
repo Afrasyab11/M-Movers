@@ -20,8 +20,8 @@ export default class ClientReview extends React.Component {
                                 <div className="carousel-inner">
                                     <div className="carousel-item active" data-bs-interval="2000">
                                         <div className="row ">
-                                            <div className="col-sm-12 col-md-12 text-center text-dark  p-4">
-                                                <p className="">It was a nice experience with Mansoor Movers for my house shifting. Very Professional team. They did things quickly and hassle-free. Prices were also competitive. Highly recommended</p>
+                                            <div className="col-sm-12 col-md-12  text-dark  p-4">
+                                                <p className="">It was a nice experience with Mansoor Movers for my house shifting. Very Professional team. They did things quickly and hassle-free. Prices were also competitive. Highly recommended for all those who wants Shifting Service.Best of Luck</p>
                                             </div>
                                         </div>
                                         <div className="row">
