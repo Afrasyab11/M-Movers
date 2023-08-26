@@ -34,7 +34,7 @@ export default class ClientReview extends React.Component {
                                     <div className="carousel-item" data-bs-interval="5000">
                                         <div className="row ">
                                             <div className="col-sm-12 col-md-12  p-4">
-                                                <p className="">I used the service from Mansoor Movers for Shifting my Apartment from Sharjah to Dubai last week. Their service was excellent, Packing and handling of all the stuffs they did very professionally.Affordable Price & Quality service. Highly recommended for all those who wants Shifting Service.</p>
+                                                <p className="">I used the service from Mansoor Movers for Shifting my Apartment from Sharjah to Dubai last week. Their service was excellent, Packing and handling of all the stuffs they did very professionally. Highly recommended for all those who wants Shifting Service.</p>
                                             </div>
                                         </div>
                                         <div className="row">
