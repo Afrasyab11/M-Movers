@@ -264,7 +264,7 @@ export default class RateListComp extends React.Component {
               </div>
             </div>
           </div>
-          <div className="col-sm-12 col-md-6 " data-aos="zoom-in-left">
+          <div className="col-sm-12 col-md-6 " data-aos="flip-up">
             <div className="p-2">
               <div className="row border rounded">
                 <div className="col-6">
@@ -299,7 +299,7 @@ export default class RateListComp extends React.Component {
               </div>
             </div>
           </div>
-          <div className="col-sm-12 col-md-6" data-aos="zoom-in-right">
+          <div className="col-sm-12 col-md-6" data-aos="flip-up">
             <div className="p-2">
               <div className="row border rounded">
                 <div className="col-6">
@@ -334,7 +334,7 @@ export default class RateListComp extends React.Component {
               </div>
             </div>
           </div>
-          <div className="col-sm-12 col-md-6" data-aos="zoom-in-left">
+          <div className="col-sm-12 col-md-6" data-aos="flip-up">
             <div className="p-2">
               <div className="row border rounded">
                 <div className="col-6">
@@ -379,7 +379,7 @@ export default class RateListComp extends React.Component {
           </div>
         </div>
         <div className="row">
-          <div className="col-sm-12 col-md-6 " data-aos="flip-right"  data-aos-duration="2500">
+          <div className="col-sm-12 col-md-6 " data-aos="flip-up"  data-aos-duration="2000">
             <div className="p-2">
               <div className="row border rounded">
                 <div className="col-6">
@@ -415,7 +415,7 @@ export default class RateListComp extends React.Component {
               </div>
             </div>
           </div>
-          <div className="col-sm-12 col-md-6 " data-aos="flip-left"  data-aos-duration="2500">
+          <div className="col-sm-12 col-md-6 " data-aos="flip-up"  data-aos-duration="2000">
             <div className="p-2">
               <div className="row border rounded">
                 <div className="col-6">
