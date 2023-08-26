@@ -1,6 +1,6 @@
 import React from "react";
 import logo from './../images/logo.png'
-import { Typewriter } from 'react-simple-typewriter'
+// import { Typewriter } from 'react-simple-typewriter'
 // import LanguageSwitcher from './translator'
 export default class Header extends React.Component {
     render() {
