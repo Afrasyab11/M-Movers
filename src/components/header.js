@@ -25,9 +25,7 @@ export default class Header extends React.Component {
                         </li>
                         
                     </ul>
-                    <ul className="navbar-nav ">
-                        {/* <LanguageSwitcher/> */}
-                    </ul>
+                   
                 </div>
             </nav>
 
