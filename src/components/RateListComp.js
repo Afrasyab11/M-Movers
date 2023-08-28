@@ -40,7 +40,6 @@ export default class RateListComp extends React.Component {
                   <p>AED780</p>
                   <ul>
                     <li>Handled by highly expectations packers and overs</li>
-                    <li>Includes 1 Truck and 3 Workers</li>
                   </ul>
                 </div>
                 <div className="col-6 pt-2 text-center">
@@ -81,7 +80,6 @@ export default class RateListComp extends React.Component {
                   <p>AED1,100</p>
                   <ul>
                     <li>Handled by highly expectations packers and overs</li>
-                    <li>Includes 1 Truck and 4 Workers</li>
                   </ul>
                 </div>
                 <div className="col-6 pt-2 text-center">
@@ -121,7 +119,6 @@ export default class RateListComp extends React.Component {
                   <p>AED1,900</p>
                   <ul>
                     <li>Handled by highly expectations packers and overs</li>
-                    <li>Includes 2 Trucks and 6 Workers</li>
                   </ul>
                 </div>
                 <div className="col-6 pt-2 text-center">
@@ -156,7 +153,6 @@ export default class RateListComp extends React.Component {
                   <p>AED2,600</p>
                   <ul>
                     <li>Handled by highly expectations packers and overs</li>
-                    <li>Includes 3 Trucks and 8 Workers</li>
                   </ul>
                 </div>
                 <div className="col-6 pt-2 text-center gap-2">
@@ -191,7 +187,6 @@ export default class RateListComp extends React.Component {
                   <p>AED3,600</p>
                   <ul>
                     <li>Handled by highly expectations packers and overs</li>
-                    <li>Includes 4 Trucks and 10 Workers</li>
                   </ul>
                 </div>
                 <div className="col-6 pt-2 text-center">
@@ -237,7 +232,6 @@ export default class RateListComp extends React.Component {
                   <p>AED 2,200</p>
                   <ul>
                     <li>Handled by highly expectations packers and overs</li>
-                    <li>Includes 2 Truck and 6 Workers</li>
                   </ul>
                 </div>
                 <div className="col-6 pt-2 text-center">
@@ -272,7 +266,6 @@ export default class RateListComp extends React.Component {
                   <p>AED3,200</p>
                   <ul>
                     <li>Handled by highly expectations packers and overs</li>
-                    <li>Includes 3 Truck and 8 Workers</li>
                   </ul>
                 </div>
                 <div className="col-6 pt-2 text-center">
@@ -307,7 +300,6 @@ export default class RateListComp extends React.Component {
                   <p>AED4,500</p>
                   <ul>
                     <li>Handled by highly expectations packers and overs</li>
-                    <li>Includes 4 Trucks and 10 Workers</li>
                   </ul>
                 </div>
                 <div className="col-6 pt-2 text-center">
@@ -342,7 +334,6 @@ export default class RateListComp extends React.Component {
                   <p>AED5,000</p>
                   <ul>
                     <li>Handled by highly expectations packers and overs</li>
-                    <li>Includes 4 Trucks and 10 Workers</li>
                   </ul>
                 </div>
                 <div className="col-6 pt-2 text-center">
