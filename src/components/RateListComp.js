@@ -14,10 +14,7 @@ import halfTruc from "./../images/halfTruck.jpeg";
 import fullTruck from "./../images/fullTruck.jpeg";
 import secondLast from "./../images/secondLastImage.jpeg";
 export default class RateListComp extends React.Component {
-  constructor(){
-    super()
-    // Aos.init({ duration: 1000 });
-}
+
   componentDidMount() {
     Aos.init({ duration: 1000 });
   }
