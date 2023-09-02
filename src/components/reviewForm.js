@@ -63,7 +63,7 @@ export default class ReviewForm extends React.Component {
                     className="alert alert-success alert-dismissible fade show"
                     role="alert"
                   >
-                    Thank you for your feedback. Your message has been submitted
+                    Thank you for your feedback. Your feedBack has been submitted
                     successfully.
                     <button
                       type="button"

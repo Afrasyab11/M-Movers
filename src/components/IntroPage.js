@@ -8,7 +8,7 @@ class IntroPage extends React.Component {
   render() {
     // const { t } = this.props;
     return (
-      <div className="container-fluid  mt-2">
+      <div className="container-fluid  mt-5">
         <div className="row align-items-center">
           <div className="col-sm-12 col-md-6 text-dark ">
             <p className="animate__animated animate__backInLeft ">
