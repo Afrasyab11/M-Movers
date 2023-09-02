@@ -4,9 +4,13 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 export default class contactComp extends Component {
-  componentDidMount() {
-    Aos.init({ duration: 1000 });
-  }
+    constructor(){
+        super()
+        Aos.init();
+    }
+//   componentDidMount() {
+//     Aos.init();
+//   }
   handleClick = (e) => {
     e.preventDefault()
     const phoneNumber = "+971545599867";
@@ -23,11 +27,11 @@ export default class contactComp extends Component {
                 CONTACT US
               </p>
               <div className="mt-5 ps-5">
-                <i class="fa-solid fa-phone-volume fa-beat"></i>{" "}
+                <i className="fa-solid fa-phone-volume fa-beat"></i>{" "}
                 <span className="text-primary" style={{textDecoration:"none", cursor:"pointer"}}  onClick={this.handleClick}>+971545599867</span>
               </div>
               <div className="mt-2 ps-5">
-                <i class="fa-solid fa-envelope fa-beat"></i>{" "}
+                <i className="fa-solid fa-envelope fa-beat"></i>{" "}
                 <span>zkmovers112@gmail.com</span>
               </div>
             </div>

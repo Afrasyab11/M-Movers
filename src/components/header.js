@@ -21,7 +21,7 @@ export default class Header extends React.Component {
             />
           </div>
           <div className="col-6 text-primary d-flex flex-column align-items-end justify-content-center pe-5">
-            <i onClick={this.handleClick} class="fa-solid fa-phone-volume fa-beat-fade fa-2xl" style={{cursor:"pointer"}}></i>
+            <i onClick={this.handleClick} className="fa-solid fa-phone-volume fa-beat-fade fa-2xl" style={{cursor:"pointer"}}></i>
           </div>
         </div>
       </div>

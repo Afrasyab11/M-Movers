@@ -1,7 +1,7 @@
 import React from "react";
-import feedBack from './../images/feedback.jpg'
+import feedBack from "./../images/feedback.jpg";
 import Aos from "aos";
-import 'aos/dist/aos.css'
+import "aos/dist/aos.css";
 export default class ReviewForm extends React.Component {
   constructor(props) {
     super(props);
@@ -11,14 +11,16 @@ export default class ReviewForm extends React.Component {
       description: "",
       image: "",
     };
+
+    Aos.init({ duration: 1000 });
   }
   handleInputChange = (event) => {
     const { name, value } = event.target;
     this.setState({ [name]: value });
   };
-  componentDidMount() {
-    Aos.init({ duration: 1000 })
-}
+  //   componentDidMount() {
+  //     Aos.init({ duration: 1000 })
+  // }
   handleSubmit = (event) => {
     event.preventDefault();
     this.setState({
@@ -48,7 +50,7 @@ export default class ReviewForm extends React.Component {
     return (
       <div className="container-fluid mt-4">
         <div className="row">
-        <div className="col-6 pt-3 d-none d-lg-block " data-aos="flip-left">
+          <div className="col-6 pt-3 d-none d-lg-block " data-aos="flip-left">
             <img className="img-fluid p-0 m-0" src={feedBack} alt="" />
           </div>
           <div className="col-lg-6 col-sm-12 " data-aos="flip-left">
@@ -63,8 +65,8 @@ export default class ReviewForm extends React.Component {
                     className="alert alert-success alert-dismissible fade show"
                     role="alert"
                   >
-                    Thank you for your feedback. Your feedBack has been submitted
-                    successfully.
+                    Thank you for your feedback. Your feedBack has been
+                    submitted successfully.
                     <button
                       type="button"
                       className="btn-close"

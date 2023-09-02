@@ -6,9 +6,13 @@ import client3 from './../images/clientImage3.jpg'
 import Aos from "aos";
 import 'aos/dist/aos.css'
 export default class ClientReview extends React.Component {
-    componentDidMount() {
-        Aos.init({ duration: 1000 })
+    constructor(){
+        super()
+        Aos.init();
     }
+    // componentDidMount() {
+    //     Aos.init({ duration: 1000 })
+    // }
     render() {
         return (
             <div className="container-fluid">
