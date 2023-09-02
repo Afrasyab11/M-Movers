@@ -6,11 +6,11 @@ import "animate.css";
 export default class Service extends React.Component {
   constructor(){
     super()
-    Aos.init({ duration: 1000 });
+    // Aos.init({ duration: 1000 });
 }
-  // componentDidMount() {
-  //   Aos.init({ duration: 1000 });
-  // }
+  componentDidMount() {
+    Aos.init({ duration: 1000 });
+  }
 
   render() {
     return (

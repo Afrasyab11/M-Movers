@@ -16,11 +16,11 @@ import secondLast from "./../images/secondLastImage.jpeg";
 export default class RateListComp extends React.Component {
   constructor(){
     super()
-    Aos.init({ duration: 1000 });
+    // Aos.init({ duration: 1000 });
 }
-  // componentDidMount() {
-  //   Aos.init();
-  // }
+  componentDidMount() {
+    Aos.init({ duration: 1000 });
+  }
 
   render() {
     return (

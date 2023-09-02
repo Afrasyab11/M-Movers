@@ -8,11 +8,11 @@ import 'aos/dist/aos.css'
 export default class ClientReview extends React.Component {
     constructor(){
         super()
-        Aos.init();
+        // Aos.init();
     }
-    // componentDidMount() {
-    //     Aos.init({ duration: 1000 })
-    // }
+    componentDidMount() {
+        Aos.init({ duration: 1000 })
+    }
     render() {
         return (
             <div className="container-fluid">

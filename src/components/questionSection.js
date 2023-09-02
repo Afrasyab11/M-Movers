@@ -4,11 +4,11 @@ import 'aos/dist/aos.css'
 export default class QuestionSection extends React.Component {
     constructor(){
         super()
-        Aos.init({ duration: 1000 });
+        // Aos.init({ duration: 1000 });
     }
-    // componentDidMount() {
-    //     Aos.init({ duration: 1000 })
-    // }
+    componentDidMount() {
+        Aos.init({ duration: 1000 })
+    }
     render() {
         return (
             <div className="container-fluid">

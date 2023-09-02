@@ -12,15 +12,15 @@ export default class ReviewForm extends React.Component {
       image: "",
     };
 
-    Aos.init({ duration: 1000 });
+    // Aos.init({ duration: 1000 });
   }
   handleInputChange = (event) => {
     const { name, value } = event.target;
     this.setState({ [name]: value });
   };
-  //   componentDidMount() {
-  //     Aos.init({ duration: 1000 })
-  // }
+    componentDidMount() {
+      Aos.init({ duration: 1000 })
+  }
   handleSubmit = (event) => {
     event.preventDefault();
     this.setState({

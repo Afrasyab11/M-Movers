@@ -6,11 +6,11 @@ import "aos/dist/aos.css";
 export default class contactComp extends Component {
     constructor(){
         super()
-        Aos.init();
+        // Aos.init();
     }
-//   componentDidMount() {
-//     Aos.init();
-//   }
+  componentDidMount() {
+    Aos.init({ duration: 1000 });
+  }
   handleClick = (e) => {
     e.preventDefault()
     const phoneNumber = "+971545599867";
