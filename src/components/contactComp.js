@@ -21,7 +21,7 @@ export default class contactComp extends Component {
           <div className="col-sm-12 col-md-6 " data-aos="fade-right">
             <div className="">
               <p className="mt-3 text-center text-primary fw-bold fs-1">
-                CONTACT US
+                {this.props.texts.contactUs}
               </p>
               <div className="mt-5 ps-5">
                 <i className="fa-solid fa-phone-volume fa-beat"></i>{" "}

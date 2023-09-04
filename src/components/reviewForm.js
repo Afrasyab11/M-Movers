@@ -59,14 +59,13 @@ export default class ReviewForm extends React.Component {
               onSubmit={this.handleSubmit}
             >
               <div className="text-center text-primary">
-                <h2>Feedback</h2>
+                <h2>{this.props.texts.feedback}</h2>
                 {this.state.showAlert && (
                   <div
                     className="alert alert-success alert-dismissible fade show"
                     role="alert"
                   >
-                    Thank you for your feedback. Your feedBack has been
-                    submitted successfully.
+                    {this.props.texts.feedbackSuccessResp}
                     <button
                       type="button"
                       className="btn-close"
@@ -79,7 +78,7 @@ export default class ReviewForm extends React.Component {
               </div>
               <div className="mb-3">
                 <label htmlFor="name" className="form-label">
-                  Name
+                  {this.props.texts.feedbackName}
                 </label>
                 <input
                   type="text"
@@ -94,7 +93,7 @@ export default class ReviewForm extends React.Component {
               </div>
               <div className="mb-3">
                 <label htmlFor="image" className="form-label">
-                  Image
+                  {this.props.texts.feedbackImage}
                 </label>
                 <input
                   type="file"
@@ -108,7 +107,7 @@ export default class ReviewForm extends React.Component {
               </div>
               <div className="mb-3">
                 <label htmlFor="description" className="form-label">
-                  Description
+                {this.props.texts.feedbackDesc}
                 </label>
                 <textarea
                   className="form-control shadow-none"
@@ -125,7 +124,7 @@ export default class ReviewForm extends React.Component {
                   type="submit"
                   className="btn btn-primary form-control shadow-none btn-xl"
                 >
-                  Submit
+                  {this.props.texts.feedbackSubmit}
                 </button>
               </div>
             </form>

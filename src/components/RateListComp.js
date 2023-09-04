@@ -14,7 +14,6 @@ import halfTruc from "./../images/halfTruck.jpeg";
 import fullTruck from "./../images/fullTruck.jpeg";
 import secondLast from "./../images/secondLastImage.jpeg";
 export default class RateListComp extends React.Component {
-
   componentDidMount() {
     Aos.init({ duration: 1000 });
   }
@@ -22,428 +21,861 @@ export default class RateListComp extends React.Component {
   render() {
     return (
       <div className="container-fluid">
-        <div className="row">
-          <div className="col-12 text-center">
-            <p className="fs-5">Apartment Moving</p>
-          </div>
-        </div>
-        <div className="row">
-          <div
-            className="col-sm-12 col-md-4 "
-            data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
-          >
-            <div className="p-2">
-              <div className="row border rounded">
-                <div className="col-6">
-                  <p>Studio Apartment</p>
-                  <p>AED780</p>
-                  <ul>
-                    <li>Handled by highly expectations packers and overs</li>
-                  </ul>
-                </div>
-                <div className="col-6 pt-2 text-center">
-                  <div className="row">
-                    <div className="col-12">
-                      {" "}
-                      <img
-                        className="img-fluid rounded"
-                        src={studioApartment}
-                        alt="studio Apartment"
-                      />
+        {this.props.lang === "English" ? (
+          <>
+            <div className="row">
+              <div className="col-12 text-center">
+                <p className="fs-5">{this.props.texts.apartmentTitle}</p>
+              </div>
+            </div>
+            <div className="row">
+              <div
+                className="col-sm-12 col-md-4 "
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+              >
+                <div className="p-2">
+                  <div className="row border rounded">
+                    <div className="col-6">
+                      <p>{this.props.texts.apartmentcard1Title}</p>
+                      <p>{this.props.texts.apartmentcard1price}</p>
+                      <ul>
+                        <li>{this.props.texts.apartmentcard1Desc}</li>
+                      </ul>
                     </div>
-                    <div className="col-12 my-2">
-                      <a
-                        className="btn btn-sm btn-primary shadow-none"
-                        href={`https://wa.me/+971545599867/?text=Hello! Monsoor Movers I want to move Studio Apartment`}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        contact
-                      </a>
+                    <div className="col-6 pt-2 text-center">
+                      <div className="row">
+                        <div className="col-12">
+                          {" "}
+                          <img
+                            className="img-fluid rounded"
+                            src={studioApartment}
+                            alt="studio Apartment"
+                          />
+                        </div>
+                        <div className="col-12 my-2">
+                          <a
+                            className="btn btn-sm btn-primary shadow-none"
+                            href={`https://wa.me/+971545599867/?text=Hello! Monsoor Movers I want to move Studio Apartment`}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            contact
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col-sm-12 col-md-4 "
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+              >
+                <div className="p-2">
+                  <div className="row border rounded">
+                    <div className="col-6">
+                      <p>{this.props.texts.apartmentcard2Title}</p>
+                      <p>{this.props.texts.apartmentcard2price}</p>
+                      <ul>
+                        <li>{this.props.texts.apartmentcard2Desc}</li>
+                      </ul>
+                    </div>
+                    <div className="col-6 pt-2 text-center">
+                      <div className="row">
+                        <div className="col-12">
+                          <img
+                            className="img-fluid rounded"
+                            src={oneBHK}
+                            alt="studio Apartment"
+                          />
+                        </div>
+                        <div className="col-12 my-2">
+                          <a
+                            className="btn btn-sm btn-primary shadow-none"
+                            href={`https://wa.me/+971545599867/?text=Hello! Monsoor Movers I want to move 1 BHK Apartment`}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            contact
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col-sm-12 col-md-4"
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+              >
+                <div className="p-2">
+                  <div className="row border rounded">
+                    <div className="col-6">
+                      <p>{this.props.texts.apartmentcard3Title}</p>
+                      <p>{this.props.texts.apartmentcard3price}</p>
+                      <ul>
+                        <li>{this.props.texts.apartmentcard3Desc}</li>
+                      </ul>
+                    </div>
+                    <div className="col-6 pt-2 text-center">
+                      <div className="row">
+                        <div className="col-12">
+                          <img
+                            className="img-fluid rounded"
+                            src={twoBHK}
+                            alt="studio Apartment"
+                          />
+                        </div>
+                        <div className="col-12 my-2">
+                          <a
+                            className="btn btn-sm btn-primary shadow-none"
+                            href={`https://wa.me/+971545599867/?text=Hello! Monsoor Movers I want to move 2 BHK Apartment`}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            contact
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-sm-12 col-md-6" data-aos="flip-right">
+                <div className="p-2">
+                  <div className="row border rounded">
+                    <div className="col-6">
+                      <p>{this.props.texts.apartmentcard4Title}</p>
+                      <p>{this.props.texts.apartmentcard4price}</p>
+                      <ul>
+                        <li>{this.props.texts.apartmentcard4Desc}</li>
+                      </ul>
+                    </div>
+                    <div className="col-6 pt-2 text-center gap-2">
+                      <div className="row">
+                        <div className="col-12">
+                          <img
+                            className="img-fluid rounded"
+                            src={threeBHK}
+                            alt="studio Apartment"
+                          />
+                        </div>
+                        <div className="col-12 my-2">
+                          <a
+                            className="btn btn-sm btn-primary shadow-none "
+                            href={`https://wa.me/+971545599867/?text=Hello! Monsoor Movers I want to move 3 BHK Apartment`}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            contact
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-sm-12 col-md-6" data-aos="flip-left">
+                <div className="p-2">
+                  <div className="row border rounded">
+                    <div className="col-6">
+                      <p>{this.props.texts.apartmentcard5Title}</p>
+                      <p>{this.props.texts.apartmentcard5price}</p>
+                      <ul>
+                        <li>{this.props.texts.apartmentcard5Desc}</li>
+                      </ul>
+                    </div>
+                    <div className="col-6 pt-2 text-center">
+                      <div className="row">
+                        <div className="col-12">
+                          <img
+                            className="img-fluid rounded"
+                            src={fourBHK}
+                            alt="studio Apartment"
+                          />
+                        </div>
+                        <div className="col-12 my-2">
+                          <a
+                            className="btn btn-sm btn-primary shadow-none"
+                            href={`https://wa.me/+971545599867/?text=Hello! Monsoor Movers I want to move 4 BHK Apartment`}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            contact
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div
-            className="col-sm-12 col-md-4 "
-            data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
-          >
-            <div className="p-2">
-              <div className="row border rounded">
-                <div className="col-6">
-                  <p>1 BHK Apartment</p>
-                  <p>AED1,100</p>
-                  <ul>
-                    <li>Handled by highly expectations packers and overs</li>
-                  </ul>
-                </div>
-                <div className="col-6 pt-2 text-center">
-                  <div className="row">
-                    <div className="col-12">
-                      <img
-                        className="img-fluid rounded"
-                        src={oneBHK}
-                        alt="studio Apartment"
-                      />
-                    </div>
-                    <div className="col-12 my-2">
-                      <a
-                        className="btn btn-sm btn-primary shadow-none"
-                        href={`https://wa.me/+971545599867/?text=Hello! Monsoor Movers I want to move 1 BHK Apartment`}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        contact
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            className="col-sm-12 col-md-4"
-            data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
-          >
-            <div className="p-2">
-              <div className="row border rounded">
-                <div className="col-6">
-                  <p>2 BHK Apartment</p>
-                  <p>AED1,900</p>
-                  <ul>
-                    <li>Handled by highly expectations packers and overs</li>
-                  </ul>
-                </div>
-                <div className="col-6 pt-2 text-center">
-                  <div className="row">
-                    <div className="col-12">
-                      <img
-                        className="img-fluid rounded"
-                        src={twoBHK}
-                        alt="studio Apartment"
-                      />
-                    </div>
-                    <div className="col-12 my-2">
-                      <a
-                        className="btn btn-sm btn-primary shadow-none"
-                        href={`https://wa.me/+971545599867/?text=Hello! Monsoor Movers I want to move 2 BHK Apartment`}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        contact
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-12 col-md-6" data-aos="flip-right">
-            <div className="p-2">
-              <div className="row border rounded">
-                <div className="col-6">
-                  <p>3 BHK Apartment</p>
-                  <p>AED2,600</p>
-                  <ul>
-                    <li>Handled by highly expectations packers and overs</li>
-                  </ul>
-                </div>
-                <div className="col-6 pt-2 text-center gap-2">
-                  <div className="row">
-                    <div className="col-12">
-                      <img
-                        className="img-fluid rounded"
-                        src={threeBHK}
-                        alt="studio Apartment"
-                      />
-                    </div>
-                    <div className="col-12 my-2">
-                      <a
-                        className="btn btn-sm btn-primary shadow-none "
-                        href={`https://wa.me/+971545599867/?text=Hello! Monsoor Movers I want to move 3 BHK Apartment`}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        contact
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-sm-12 col-md-6" data-aos="flip-left">
-            <div className="p-2">
-              <div className="row border rounded">
-                <div className="col-6">
-                  <p>4 BHK Apartment</p>
-                  <p>AED3,600</p>
-                  <ul>
-                    <li>Handled by highly expectations packers and overs</li>
-                  </ul>
-                </div>
-                <div className="col-6 pt-2 text-center">
-                  <div className="row">
-                    <div className="col-12">
-                      <img
-                        className="img-fluid rounded"
-                        src={fourBHK}
-                        alt="studio Apartment"
-                      />
-                    </div>
-                    <div className="col-12 my-2">
-                      <a
-                        className="btn btn-sm btn-primary shadow-none"
-                        href={`https://wa.me/+971545599867/?text=Hello! Monsoor Movers I want to move 4 BHK Apartment`}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        contact
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div className="mt-5"></div>
-        <div className="mt-5"></div>
-        <div className="mt-5"></div>
-        <div className="row">
-          <div className="col-12 text-center">
-            <p className="fs-5">Villa Moving</p>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-sm-12 col-md-6 " data-aos="zoom-in-right">
-            <div className="p-2">
-              <div className="row border rounded">
-                <div className="col-6">
-                  <p>2 Bedroom Villa</p>
-                  <p>AED 2,200</p>
-                  <ul>
-                    <li>Handled by highly expectations packers and overs</li>
-                  </ul>
-                </div>
-                <div className="col-6 pt-2 text-center">
-                  <div className="row">
-                    <div className="col-12">
-                      <img
-                        className="img-fluid rounded"
-                        src={five}
-                        alt="studio Apartment"
-                      />
+            <div className="mt-5"></div>
+            <div className="mt-5"></div>
+            <div className="mt-5"></div>
+            <div className="row">
+              <div className="col-12 text-center">
+                <p className="fs-5">{this.props.texts.villaTitle}</p>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-sm-12 col-md-6 " data-aos="zoom-in-right">
+                <div className="p-2">
+                  <div className="row border rounded">
+                    <div className="col-6">
+                      <p>{this.props.texts.villacard1Title}</p>
+                      <p>{this.props.texts.villacard1price}</p>
+                      <ul>
+                        <li>{this.props.texts.villacard1Desc}</li>
+                      </ul>
                     </div>
-                    <div className="col-12 my-2">
-                      <a
-                        className="btn btn-sm btn-primary shadow-none"
-                        href={`https://wa.me/+971545599867/?text=Hello! Monsoor Movers I want to move 2 Bedroom Villa`}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        contact
-                      </a>
+                    <div className="col-6 pt-2 text-center">
+                      <div className="row">
+                        <div className="col-12">
+                          <img
+                            className="img-fluid rounded"
+                            src={five}
+                            alt="studio Apartment"
+                          />
+                        </div>
+                        <div className="col-12 my-2">
+                          <a
+                            className="btn btn-sm btn-primary shadow-none"
+                            href={`https://wa.me/+971545599867/?text=Hello! Monsoor Movers I want to move 2 Bedroom Villa`}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            contact
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-sm-12 col-md-6 " data-aos="zoom-in-down">
+                <div className="p-2">
+                  <div className="row border rounded">
+                    <div className="col-6">
+                      <p>{this.props.texts.villacard2Title}</p>
+                      <p>{this.props.texts.villacard2price}</p>
+                      <ul>
+                        <li>{this.props.texts.villacard2Desc}</li>
+                      </ul>
+                    </div>
+                    <div className="col-6 pt-2 text-center">
+                      <div className="row">
+                        <div className="col-12">
+                          <img
+                            className="img-fluid rounded"
+                            src={sixVilla}
+                            alt="studio Apartment"
+                          />
+                        </div>
+                        <div className="col-12 my-2">
+                          <a
+                            className="btn btn-sm btn-primary shadow-none"
+                            href={`https://wa.me/+971545599867/?text=Hello! Monsoor Movers I want to move Three Bedroom Villa`}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            contact
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-sm-12 col-md-6" data-aos="flip-left">
+                <div className="p-2">
+                  <div className="row border rounded">
+                    <div className="col-6">
+                      <p>{this.props.texts.villacard3Title}</p>
+                      <p>{this.props.texts.villacard3price}</p>
+                      <ul>
+                        <li>{this.props.texts.villacard3Desc}</li>
+                      </ul>
+                    </div>
+                    <div className="col-6 pt-2 text-center">
+                      <div className="row">
+                        <div className="col-12">
+                          <img
+                            className="img-fluid rounded"
+                            src={secondLast}
+                            alt="studio Apartment"
+                          />
+                        </div>
+                        <div className="col-12 my-2">
+                          <a
+                            className="btn btn-sm btn-primary shadow-none"
+                            href={`https://wa.me/+971545599867/?text=Hello! Monsoor Movers I want to move Four Bedroom Villa`}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            contact
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-sm-12 col-md-6" data-aos="flip-left">
+                <div className="p-2">
+                  <div className="row border rounded">
+                    <div className="col-6">
+                      <p>{this.props.texts.villacard4Title}</p>
+                      <p>{this.props.texts.villacard4price}</p>
+                      <ul>
+                        <li>{this.props.texts.villacard4Desc}</li>
+                      </ul>
+                    </div>
+                    <div className="col-6 pt-2 text-center">
+                      <div className="row">
+                        <div className="col-12">
+                          <img
+                            className="img-fluid rounded"
+                            src={fullTruck}
+                            alt="studio Apartment"
+                          />
+                        </div>
+                        <div className="col-12 my-2">
+                          <a
+                            className="btn btn-sm btn-primary shadow-none"
+                            href={`https://wa.me/+971545599867/?text=Hello! Monsoor Movers I want to move Five Bedroom Villa`}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            contact
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="col-sm-12 col-md-6 " data-aos="zoom-in-down">
-            <div className="p-2">
-              <div className="row border rounded">
-                <div className="col-6">
-                  <p>3 Bedroom Villa</p>
-                  <p>AED3,200</p>
-                  <ul>
-                    <li>Handled by highly expectations packers and overs</li>
-                  </ul>
-                </div>
-                <div className="col-6 pt-2 text-center">
-                  <div className="row">
-                    <div className="col-12">
-                      <img
-                        className="img-fluid rounded"
-                        src={sixVilla}
-                        alt="studio Apartment"
-                      />
+            <div className="mt-5"></div>
+            <div className="mt-5"></div>
+            <div className="mt-5"></div>
+            <div className="row">
+              <div className="col-12 text-center">
+                <p className="fs-5">{this.props.texts.addonTruckTitle}</p>
+              </div>
+            </div>
+            <div className="row">
+              <div
+                className="col-sm-12 col-md-6 "
+                data-aos="flip-left"
+                data-aos-duration="2000"
+              >
+                <div className="p-2">
+                  <div className="row border rounded">
+                    <div className="col-6">
+                      <p>{this.props.texts.addoncard1Title}</p>
+                      <p>{this.props.texts.addoncard1price}</p>
+                      <ul>
+                        <li>{this.props.texts.addoncard1Desc}</li>
+                      </ul>
                     </div>
-                    <div className="col-12 my-2">
-                      <a
-                        className="btn btn-sm btn-primary shadow-none"
-                        href={`https://wa.me/+971545599867/?text=Hello! Monsoor Movers I want to move Three Bedroom Villa`}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        contact
-                      </a>
+                    <div className="col-6 pt-2 text-center">
+                      <div className="row">
+                        <div className="col-12">
+                          <img
+                            className="img-fluid rounded"
+                            src={halfTruc}
+                            alt="studio Apartment"
+                          />
+                        </div>
+                        <div className="col-12 my-2">
+                          <a
+                            className="btn btn-sm btn-primary shadow-none"
+                            href={`https://wa.me/+971545599867/?text=Hello! Monsoor Movers I want to Load Half Truck`}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            contact
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col-sm-12 col-md-6 "
+                data-aos="flip-left"
+                data-aos-duration="2000"
+              >
+                <div className="p-2">
+                  <div className="row border rounded">
+                    <div className="col-6">
+                      <p>{this.props.texts.addoncard2Title}</p>
+                      <p>{this.props.texts.addoncard2price}</p>
+                      <ul>
+                        <li>{this.props.texts.addoncard2Desc}</li>
+                      </ul>
+                    </div>
+                    <div className="col-6 pt-2 text-center">
+                      <div className="row">
+                        <div className="col-12">
+                          <img
+                            className="img-fluid rounded"
+                            src={fourVilla}
+                            alt="studio Apartment"
+                          />
+                        </div>
+                        <div className="col-12 my-2">
+                          <a
+                            className="btn btn-sm btn-primary shadow-none"
+                            href={`https://wa.me/+971545599867/?text=Hello! Monsoor Movers I want to Load Full truck`}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            contact
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="col-sm-12 col-md-6" data-aos="flip-left">
-            <div className="p-2">
-              <div className="row border rounded">
-                <div className="col-6">
-                  <p>4 Bedroom Villa</p>
-                  <p>AED4,500</p>
-                  <ul>
-                    <li>Handled by highly expectations packers and overs</li>
-                  </ul>
-                </div>
-                <div className="col-6 pt-2 text-center">
-                  <div className="row">
-                    <div className="col-12">
-                      <img
-                        className="img-fluid rounded"
-                        src={secondLast}
-                        alt="studio Apartment"
-                      />
+          </>
+        ) : (
+          <>
+            <div className="row">
+              <div className="col-12 text-center">
+                <p className="fs-5">{this.props.texts.apartmentTitle}</p>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-sm-12 col-md-4 text-end"
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+              >
+                <div className="p-2">
+                  <div className="row border rounded">
+                    <div className="col-6 pt-2 text-center">
+                      <div className="row">
+                        <div className="col-12">
+                          <img
+                            className="img-fluid rounded"
+                            src={twoBHK}
+                            alt="studio Apartment"
+                          />
+                        </div>
+                        <div className="col-12 my-2">
+                          <a
+                            className="btn btn-sm btn-primary shadow-none"
+                            href={`https://wa.me/+971545599867/?text=Hello! Monsoor Movers I want to move 2 BHK Apartment`}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            {this.props.texts.contactbtn}
+                          </a>
+                        </div>
+                      </div>
                     </div>
-                    <div className="col-12 my-2">
-                      <a
-                        className="btn btn-sm btn-primary shadow-none"
-                        href={`https://wa.me/+971545599867/?text=Hello! Monsoor Movers I want to move Four Bedroom Villa`}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        contact
-                      </a>
+                    <div className="col-6 text-end">
+                      <p>{this.props.texts.apartmentcard3Title}</p>
+                      <p>{this.props.texts.apartmentcard3price}</p>
+                      <li className="nav-link p-0">
+                        {this.props.texts.apartmentcard3Desc}
+                      </li>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-sm-12 col-md-4"  data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+              >
+                <div className="p-2">
+                  <div className="row border rounded">
+                    <div className="col-6 pt-2 text-center">
+                      <div className="row">
+                        <div className="col-12">
+                          <img
+                            className="img-fluid rounded"
+                            src={oneBHK}
+                            alt="studio Apartment"
+                          />
+                        </div>
+                        <div className="col-12 my-2">
+                          <a
+                            className="btn btn-sm btn-primary shadow-none"
+                            href={`https://wa.me/+971545599867/?text=Hello! Monsoor Movers I want to move 1 BHK Apartment`}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            {this.props.texts.contactbtn}
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-6 text-end">
+                      <p>{this.props.texts.apartmentcard2Title}</p>
+                      <p>{this.props.texts.apartmentcard2price}</p>
+                      <li className="nav-link p-0">
+                        {this.props.texts.apartmentcard2Desc}
+                      </li>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-sm-12 col-md-4"
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+              >
+                <div className="p-2">
+                  <div className="row border rounded">
+                    <div className="col-6 pt-2 text-center">
+                      <div className="row">
+                        <div className="col-12">
+                          {" "}
+                          <img
+                            className="img-fluid rounded"
+                            src={studioApartment}
+                            alt="studio Apartment"
+                          />
+                        </div>
+                        <div className="col-12 my-2">
+                          <a
+                            className="btn btn-sm btn-primary shadow-none"
+                            href={`https://wa.me/+971545599867/?text=Hello! Monsoor Movers I want to move Studio Apartment`}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            {this.props.texts.contactbtn}
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-6 text-end">
+                      <p>{this.props.texts.apartmentcard1Title}</p>
+                      <p>{this.props.texts.apartmentcard1price}</p>
+                      <li className="nav-link p-0">
+                        {this.props.texts.apartmentcard1Desc}
+                      </li>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-sm-12 col-md-6" data-aos="flip-left">
+                <div className="p-2">
+                  <div className="row border rounded">
+                    <div className="col-6 pt-2 text-center">
+                      <div className="row">
+                        <div className="col-12">
+                          <img
+                            className="img-fluid rounded"
+                            src={fourBHK}
+                            alt="studio Apartment"
+                          />
+                        </div>
+                        <div className="col-12 my-2">
+                          <a
+                            className="btn btn-sm btn-primary shadow-none"
+                            href={`https://wa.me/+971545599867/?text=Hello! Monsoor Movers I want to move 4 BHK Apartment`}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            {this.props.texts.contactbtn}
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-6 text-end">
+                      <p>{this.props.texts.apartmentcard5Title}</p>
+                      <p>{this.props.texts.apartmentcard5price}</p>
+                      <li className="nav-link p-0">
+                        {this.props.texts.apartmentcard5Desc}
+                      </li>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-sm-12 col-md-6" data-aos="flip-right">
+                <div className="p-2">
+                  <div className="row border rounded">
+                    <div className="col-6 pt-2 text-center gap-2">
+                      <div className="row">
+                        <div className="col-12">
+                          <img
+                            className="img-fluid rounded"
+                            src={threeBHK}
+                            alt="studio Apartment"
+                          />
+                        </div>
+                        <div className="col-12 my-2">
+                          <a
+                            className="btn btn-sm btn-primary shadow-none "
+                            href={`https://wa.me/+971545599867/?text=Hello! Monsoor Movers I want to move 3 BHK Apartment`}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            {this.props.texts.contactbtn}
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-6 text-end">
+                      <p>{this.props.texts.apartmentcard4Title}</p>
+                      <p>{this.props.texts.apartmentcard4price}</p>
+                      <li className="nav-link p-0">
+                        {this.props.texts.apartmentcard4Desc}
+                      </li>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="col-sm-12 col-md-6" data-aos="flip-left">
-            <div className="p-2">
-              <div className="row border rounded">
-                <div className="col-6">
-                  <p>5 Bedroom Villa</p>
-                  <p>AED5,000</p>
-                  <ul>
-                    <li>Handled by highly expectations packers and overs</li>
-                  </ul>
-                </div>
-                <div className="col-6 pt-2 text-center">
-                  <div className="row">
-                    <div className="col-12">
-                      <img
-                        className="img-fluid rounded"
-                        src={fullTruck}
-                        alt="studio Apartment"
-                      />
+
+            <div className="mt-5"></div>
+            <div className="mt-5"></div>
+            <div className="mt-5"></div>
+            <div className="row">
+              <div className="col-12 text-center">
+                <p className="fs-5">{this.props.texts.villaTitle}</p>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-sm-12 col-md-6 " data-aos="zoom-in-down">
+                <div className="p-2">
+                  <div className="row border rounded">
+                    <div className="col-6 pt-2 text-center">
+                      <div className="row">
+                        <div className="col-12">
+                          <img
+                            className="img-fluid rounded"
+                            src={sixVilla}
+                            alt="studio Apartment"
+                          />
+                        </div>
+                        <div className="col-12 my-2">
+                          <a
+                            className="btn btn-sm btn-primary shadow-none"
+                            href={`https://wa.me/+971545599867/?text=Hello! Monsoor Movers I want to move Three Bedroom Villa`}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            {this.props.texts.contactbtn}
+                          </a>
+                        </div>
+                      </div>
                     </div>
-                    <div className="col-12 my-2">
-                      <a
-                        className="btn btn-sm btn-primary shadow-none"
-                        href={`https://wa.me/+971545599867/?text=Hello! Monsoor Movers I want to move Five Bedroom Villa`}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        contact
-                      </a>
+                    <div className="col-6 text-end">
+                      <p>{this.props.texts.villacard2Title}</p>
+                      <p>{this.props.texts.villacard2price}</p>
+                      <li className="nav-link p-0">
+                        {this.props.texts.villacard2Desc}
+                      </li>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-sm-12 col-md-6 " data-aos="zoom-in-right">
+                <div className="p-2">
+                  <div className="row border rounded">
+                    <div className="col-6 pt-2 text-center">
+                      <div className="row">
+                        <div className="col-12">
+                          <img
+                            className="img-fluid rounded"
+                            src={five}
+                            alt="studio Apartment"
+                          />
+                        </div>
+                        <div className="col-12 my-2">
+                          <a
+                            className="btn btn-sm btn-primary shadow-none"
+                            href={`https://wa.me/+971545599867/?text=Hello! Monsoor Movers I want to move 2 Bedroom Villa`}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            {this.props.texts.contactbtn}
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-6 text-end">
+                      <p>{this.props.texts.villacard1Title}</p>
+                      <p>{this.props.texts.villacard1price}</p>
+                      <li className="nav-link p-0">
+                        {this.props.texts.villacard1Desc}
+                      </li>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-sm-12 col-md-6" data-aos="flip-left">
+                <div className="p-2">
+                  <div className="row border rounded">
+                    <div className="col-6 pt-2 text-center">
+                      <div className="row">
+                        <div className="col-12">
+                          <img
+                            className="img-fluid rounded"
+                            src={fullTruck}
+                            alt="studio Apartment"
+                          />
+                        </div>
+                        <div className="col-12 my-2">
+                          <a
+                            className="btn btn-sm btn-primary shadow-none"
+                            href={`https://wa.me/+971545599867/?text=Hello! Monsoor Movers I want to move Five Bedroom Villa`}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            {this.props.texts.contactbtn}
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-6 text-end">
+                      <p>{this.props.texts.villacard4Title}</p>
+                      <p>{this.props.texts.villacard4price}</p>
+                      <li className="nav-link p-0">
+                        {this.props.texts.villacard4Desc}
+                      </li>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-sm-12 col-md-6" data-aos="flip-left">
+                <div className="p-2">
+                  <div className="row border rounded">
+                    <div className="col-6 pt-2 text-center">
+                      <div className="row">
+                        <div className="col-12">
+                          <img
+                            className="img-fluid rounded"
+                            src={secondLast}
+                            alt="studio Apartment"
+                          />
+                        </div>
+                        <div className="col-12 my-2">
+                          <a
+                            className="btn btn-sm btn-primary shadow-none"
+                            href={`https://wa.me/+971545599867/?text=Hello! Monsoor Movers I want to move Four Bedroom Villa`}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            {this.props.texts.contactbtn}
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-6 text-end">
+                      <p>{this.props.texts.villacard3Title}</p>
+                      <p>{this.props.texts.villacard3price}</p>
+                      <li className="nav-link p-0">
+                        {this.props.texts.villacard3Desc}
+                      </li>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div className="mt-5"></div>
-        <div className="mt-5"></div>
-        <div className="mt-5"></div>
-        <div className="row">
-          <div className="col-12 text-center">
-            <p className="fs-5">Addon Truck</p>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-sm-12 col-md-6 " data-aos="flip-left"  data-aos-duration="2000">
-            <div className="p-2">
-              <div className="row border rounded">
-                <div className="col-6">
-                  <p>Half Load Truck</p>
-                  <p>AED399</p>
-                  <ul>
-                    <li>
-                      Charges for Extra truck would be over the fixed rates
-                    </li>
-                  </ul>
-                </div>
-                <div className="col-6 pt-2 text-center">
-                  <div className="row">
-                    <div className="col-12">
-                      <img
-                        className="img-fluid rounded"
-                        src={halfTruc}
-                        alt="studio Apartment"
-                      />
+            <div className="mt-5"></div>
+            <div className="mt-5"></div>
+            <div className="mt-5"></div>
+            <div className="row">
+              <div className="col-12 text-center">
+                <p className="fs-5">{this.props.texts.addonTruckTitle}</p>
+              </div>
+            </div>
+            <div className="row">
+              <div
+                className="col-sm-12 col-md-6 "
+                data-aos="flip-left"
+                data-aos-duration="2000"
+              >
+                <div className="p-2">
+                  <div className="row border rounded">
+                    <div className="col-6 pt-2 text-center">
+                      <div className="row">
+                        <div className="col-12">
+                          <img
+                            className="img-fluid rounded"
+                            src={fourVilla}
+                            alt="studio Apartment"
+                          />
+                        </div>
+                        <div className="col-12 my-2">
+                          <a
+                            className="btn btn-sm btn-primary shadow-none"
+                            href={`https://wa.me/+971545599867/?text=Hello! Monsoor Movers I want to Load Full truck`}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            {this.props.texts.contactbtn}
+                          </a>
+                        </div>
+                      </div>
                     </div>
-                    <div className="col-12 my-2">
-                      <a
-                        className="btn btn-sm btn-primary shadow-none"
-                        href={`https://wa.me/+971545599867/?text=Hello! Monsoor Movers I want to Load Half Truck`}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        contact
-                      </a>
+                    <div className="col-6 text-end">
+                      <p>{this.props.texts.addoncard2Title}</p>
+                      <p>{this.props.texts.addoncard2price}</p>
+                      <li className="nav-link p-0">
+                        {this.props.texts.addoncard2Desc}
+                      </li>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="col-sm-12 col-md-6 "
+                data-aos="flip-left"
+                data-aos-duration="2000"
+              >
+                <div className="p-2">
+                  <div className="row border rounded">
+                    <div className="col-6 pt-2 text-center">
+                      <div className="row">
+                        <div className="col-12">
+                          <img
+                            className="img-fluid rounded"
+                            src={halfTruc}
+                            alt="studio Apartment"
+                          />
+                        </div>
+                        <div className="col-12 my-2">
+                          <a
+                            className="btn btn-sm btn-primary shadow-none"
+                            href={`https://wa.me/+971545599867/?text=Hello! Monsoor Movers I want to Load Half Truck`}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            {this.props.texts.contactbtn}
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-6 text-end">
+                      <p>{this.props.texts.addoncard1Title}</p>
+                      <p>{this.props.texts.addoncard1price}</p>
+                      <li className="nav-link text-end">
+                        {this.props.texts.addoncard1Desc}
+                      </li>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="col-sm-12 col-md-6 " data-aos="flip-left"  data-aos-duration="2000">
-            <div className="p-2">
-              <div className="row border rounded">
-                <div className="col-6">
-                  <p>Full Load Truck</p>
-                  <p>AED799</p>
-                  <ul>
-                    <li>
-                      Charges for Extra truck would be over the fixed rates
-                    </li>
-                  </ul>
-                </div>
-                <div className="col-6 pt-2 text-center">
-                  <div className="row">
-                    <div className="col-12">
-                      <img
-                        className="img-fluid rounded"
-                        src={fourVilla}
-                        alt="studio Apartment"
-                      />
-                    </div>
-                    <div className="col-12 my-2">
-                      <a
-                        className="btn btn-sm btn-primary shadow-none"
-                        href={`https://wa.me/+971545599867/?text=Hello! Monsoor Movers I want to Load Full truck`}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        contact
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+          </>
+        )}
       </div>
     );
   }

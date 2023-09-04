@@ -1,3 +1,97 @@
 {
-    "intro" :"Our main objective is to offer quality service ensuring 100% satisfaction to customers without any unexpected costs or hidden agendas. Our high-qualitly service at economical rates have won the hearts of millions of clients and continues to do so."
+    "intro" :"Our main objective is to offer quality service ensuring 100% satisfaction to customers without any unexpected costs or hidden agendas. Our high-qualitly service at economical rates have won the hearts of millions of clients and continues to do so.",
+    "intro1":"Trusted Mover's in all over the UAE",
+    "intro2":"Exceeding expectations with professionalism",
+    "intro3":"Competitive prices for affordable services.",
+    "intro4":"WE'RE TRUSTED BY MORE THAN",
+    "intro5":"1300 CLIENTS",
+    "serviceWelcom":"WELCOME TO",
+    "serviceWelcom2":"OUR SERVICES",
+    "serviceWelcom3":"with Professional Movers we provide the following Services at offordable rates, to suit yout pocket and smooth your pocket",
+    "serviceLocal":"LOCAL MOVING",
+    "serviceLocalDesc":"We will happily transport your household from one location to another.",
+    "serviceLongDistance":"LONG DISTANCE MOVING",
+    "serviceLongDistanceDesc":"Mover will make you long distance moving experience stress-free",
+    "serviceMovingKit":"MOVING KITS",
+    "serviceMovingKitDesc":"We offer several different moving kits so you don't have to worry about the details.",
+
+    "apartmentTitle":"Apartment Moving",
+
+    "apartmentcard1Title":"Studio Apartment",
+    "apartmentcard1price":"AED780",
+    "apartmentcard1Desc":"Handled by highly expectations packers and overs",
+
+    "apartmentcard2Title":"1 BHK Apartment",
+    "apartmentcard2price":"AED1,100",
+    "apartmentcard2Desc":"Handled by highly expectations packers and overs",
+
+    "apartmentcard3Title":"2 BHK Apartment",
+    "apartmentcard3price":"AED1,900",
+    "apartmentcard3Desc":"Handled by highly expectations packers and overs",
+
+    "apartmentcard4Title":"3 BHK Apartment",
+    "apartmentcard4price":"AED2,600",
+    "apartmentcard4Desc":"Handled by highly expectations packers and overs",
+
+    "apartmentcard5Title":"4 BHK Apartment",
+    "apartmentcard5price":"AED3,600",
+    "apartmentcard5Desc":"Handled by highly expectations packers and overs",
+
+    "villaTitle":"Villa Moving",
+
+    "villacard1Title":"2 Bedroom Villa",
+    "villacard1price":"AED 2,200",
+    "villacard1Desc":"Handled by highly expectations packers and overs",
+
+    "villacard2Title":"3 Bedroom Villa",
+    "villacard2price":"AED3,200",
+    "villacard2Desc":"Handled by highly expectations packers and overs",
+
+    "villacard3Title":"4 Bedroom Villa",
+    "villacard3price":"AED4,500",
+    "villacard3Desc":"Handled by highly expectations packers and overs",
+
+    "villacard4Title":"5 Bedroom Villa",
+    "villacard4price":"AED5,000",
+    "villacard4Desc":"Handled by highly expectations packers and overs",
+
+    "addonTruckTitle":"Addon Truck",
+
+    "addoncard1Title":"Half Load Truck",
+    "addoncard1price":"AED399",
+    "addoncard1Desc":"Charges for Extra truck would be over the fixed rates",
+
+    "addoncard2Title":"Full Load Truck",
+    "addoncard2price":"AED799",
+    "addoncard2Desc":"Charges for Extra truck would be over the fixed rates",
+
+    "contactUs":"CONTACT US",
+
+    "faq":"FAQ",
+    "faqStandFor":"FREQUENTLY ASKED QUESTIONS",
+
+    "faqcard1Ques":"Do you move unique or very lare items?",
+    "faqcard1Ans":"Yes! We move almost all items.Be sure to let you Gorilla Movers Representative know ahead of time in case requirs a third mover or special equipment",
+   
+    "faqcard2Ques":"How do you take care of fragile items/antiques?",
+    "faqcard2Ans":"its your mission to move your belongings safely and securely.To ensure your items are moved unharmed, we carefully pad and shrink wrap them.",
+    
+    "faqcard3Ques":"Can you pack my stuff or does it have to be packed?",
+    "faqcard3QAns":"We are happy to pack your stuff! Be sure to tell us prior to the move to ensure efficeincy. To minimize costs, customer have the opinion to pack their belongings.",
+
+    "feedback":"Feedback",
+    "feedbackName":"Name",
+    "feedbackImage":"Image",
+    "feedbackDesc":"Description",
+    "feedbackSubmit":"Submit",
+
+    "clientReviewTitle":"What Our Client Say",
+    "client1ReviewDesc":"It was a nice experience with Mansoor Movers for my house shifting. Very Professional team. They did things quickly and hassle-free. Prices were also competitive. Highly recommended for all those who wants Shifting Service.Best of Luck",
+    "client2ReviewDesc":"I used the service from Mansoor Movers for Shifting my Apartment from Sharjah to Dubai last week. Their service was excellent, Packing and handling of all the stuffs they did very professionally. Highly recommended for all those who wants Shifting Service.",
+    "client3ReviewDesc":"These guys are the best movers that I have ever used! With all of the positive reviews, how could I go wrong? I called them and had constant communication with direct via phone and email and felt reassured that everything was going to be taken care of.",
+    "contactbtn":"contact",
+    "feedbackSuccessResp":"Thank you for your feedback. Your feedback has been submitted successfully"
+
+    
+
 }

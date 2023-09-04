@@ -1,4 +1,5 @@
 import "./App.css";
+import React, { Component } from "react";
 import Header from "./components/header";
 import IntroPage from "./components/IntroPage";
 import Service from "./components/Services";
@@ -8,26 +9,43 @@ import Footer from "./components/footer";
 import RateListComp from "./components/RateListComp";
 import ReviewForm from "./components/reviewForm";
 import ContactComp from "./components/contactComp";
+import Arabic from "./components/translate/ar.json";
+import English from "./components/translate/en.json";
 // import i18n from 'i18next';
 
-function App() {
-  return (
-    <div>
-        <Header />
-      {/* <div className='whatsappIcon'>
-        <a href={`https://wa.me/+971545599867/?text=Hello! Monsoor Movers`} target="_blank"
-          rel="noreferrer" className="fa-brands fa-square-whatsapp" style={{ "color": "#23c92c", fontSize: "50px" }}></a>
-      </div> */}
-      <IntroPage />
-      <Service />
-      <RateListComp />
-      <ContactComp />
-      <QuestionSection />
-      <ReviewForm />
-      <ClientReview />
-      <Footer />
-    </div>
-  );
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      currentLanguage: {}, // Default language is English
+      lang: 'English',
+      texts: English,
+    };
+  }
+  toggleLanguage = (item) => {
+    console.log(item)
+    const newLanguage = item === "English" ? English : Arabic;
+    this.setState({
+      texts: newLanguage,
+      lang:item
+    });
+    // console.log(this.state.texts);
+  };
+  render() {
+    return (
+      <div>
+        <Header toggleLanguage={(item) => this.toggleLanguage(item)} lang={this.state.lang}/>
+        <IntroPage texts={this.state.texts} lang={this.state.lang} />
+        <Service texts={this.state.texts} />
+        <RateListComp texts={this.state.texts} lang={this.state.lang} />
+        <ContactComp texts={this.state.texts}/>
+        <QuestionSection texts={this.state.texts}/>
+        <ReviewForm texts={this.state.texts}/>
+        <ClientReview texts={this.state.texts}/>
+        <Footer />
+      </div>
+    );
+  }
 }
 
 export default App;

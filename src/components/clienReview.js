@@ -15,14 +15,14 @@ export default class ClientReview extends React.Component {
             <div className="container-fluid">
                 <div className="row mt-5 px-3 d-flex justify-content-center align-items-center">
                     <div className="col-sm-12 col-md-6 pt-5 " data-aos="fade-right">
-                        <p className="text-center fs-1 ">What Our Client Say</p>
+                        <p className="text-center fs-1 ">{this.props.texts.clientReviewTitle}</p>
                         <div className="">
                             <div id="carouselDark" className="carousel carousel-dark slide " data-bs-ride="carousel">
                                 <div className="carousel-inner">
                                     <div className="carousel-item active" data-bs-interval="2000">
                                         <div className="row ">
                                             <div className="col-sm-12 col-md-12  text-dark  p-4">
-                                                <p className="">It was a nice experience with Mansoor Movers for my house shifting. Very Professional team. They did things quickly and hassle-free. Prices were also competitive. Highly recommended for all those who wants Shifting Service.Best of Luck</p>
+                                                <p className="">{this.props.texts.client1ReviewDesc}</p>
                                             </div>
                                         </div>
                                         <div className="row">
@@ -35,7 +35,7 @@ export default class ClientReview extends React.Component {
                                     <div className="carousel-item" data-bs-interval="5000">
                                         <div className="row ">
                                             <div className="col-sm-12 col-md-12  p-4">
-                                                <p className="">I used the service from Mansoor Movers for Shifting my Apartment from Sharjah to Dubai last week. Their service was excellent, Packing and handling of all the stuffs they did very professionally. Highly recommended for all those who wants Shifting Service.</p>
+                                                <p className="">{this.props.texts.client2ReviewDesc}</p>
                                             </div>
                                         </div>
                                         <div className="row">
@@ -48,7 +48,7 @@ export default class ClientReview extends React.Component {
                                     <div className="carousel-item" data-bs-interval="5000">
                                         <div className="row ">
                                             <div className="col-sm-12 col-md-12  p-4">
-                                                <p className="">These guys are the best movers that I have ever used! With all of the positive reviews, how could I go wrong? I called them and had constant communication with direct via phone and email and felt reassured that everything was going to be taken care of.</p>
+                                                <p className="">{this.props.texts.client3ReviewDesc}</p>
                                             </div>
                                         </div>
                                         <div className="row">
