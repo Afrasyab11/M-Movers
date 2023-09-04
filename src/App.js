@@ -11,13 +11,12 @@ import ReviewForm from "./components/reviewForm";
 import ContactComp from "./components/contactComp";
 import Arabic from "./components/translate/ar.json";
 import English from "./components/translate/en.json";
-// import i18n from 'i18next';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      currentLanguage: {}, // Default language is English
+      currentLanguage: {}, 
       lang: 'English',
       texts: English,
     };
@@ -29,7 +28,6 @@ class App extends Component {
       texts: newLanguage,
       lang:item
     });
-    // console.log(this.state.texts);
   };
   render() {
     return (
