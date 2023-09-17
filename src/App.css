@@ -9,27 +9,23 @@
   top: 315px;
   right: 5px;
 }
-/* Custom styles for the navbar */
 .navbar-brand {
   font-weight: bold;
 }
 
-/* Customize the appearance of the navigation links */
 .navbar-nav .nav-item {
   margin-right: 10px;
 }
 
-/* Adjust the burger menu icon's color */
 .navbar-toggler-icon {
-  background-color: #fff; /* Customize the color */
+  background-color: #fff; 
 }
 
-/* Adjust the color of the button when it's active (open) */
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
-  background-color: #fff; /* Customize the color */
+  background-color: #fff;
 }
 .custom-navbar {
-  flex-direction: row-reverse; /* Reverse the order of elements to make the menu appear on the right */
+  flex-direction: row-reverse; 
 }
 .dropdown-menu {
   min-width: 5.33rem !important;

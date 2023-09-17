@@ -1,8 +1,6 @@
 import React from "react";
 import logo from "./../images/logo.png";
 import { Link } from "react-router-dom";
-// import { Typewriter } from "react-simple-typewriter";
-// import LanguageSwitcher from './translator'
 export default class Header extends React.Component {
   handleClick = () => {
     const phoneNumber = "+971545599867";

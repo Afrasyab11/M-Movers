@@ -101,7 +101,7 @@ class IntroPage extends React.Component {
                     className="py-4 px-2 text-end"
                     style={{ backgroundColor: "rgb(25, 116, 207)" }}
                   >
-                    <i class="fa-solid fa-truck-fast fs-1  fa-flip-horizontal mb-2"></i>{" "}
+                    <i className="fa-solid fa-truck-fast fs-1  fa-flip-horizontal mb-2"></i>{" "}
                     <br></br>
                     <span className="fw-bold">
                       {this.props.texts.intro4}{" "}
