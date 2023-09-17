@@ -5,6 +5,12 @@ import "animate.css";
 
 // import { withTranslation } from 'react-i18next';
 class IntroPage extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+     
+    };
+  }
   render() {
     // const { t } = this.props;
     return (

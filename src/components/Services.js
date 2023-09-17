@@ -4,6 +4,12 @@ import "aos/dist/aos.css";
 import "animate.css";
 
 export default class Service extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+     
+    };
+  }
   componentDidMount() {
     Aos.init({ duration: 1000 });
   }
