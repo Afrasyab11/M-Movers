@@ -28,6 +28,16 @@
   flex-direction: row-reverse; 
 }
 .dropdown-menu {
-  min-width: 5.33rem !important;
+  min-width:3.9rem !important;
+  border-radius: 0%;
  
+}
+.fixedHeader{
+  position: sticky;
+  top: 0px;
+  z-index: 3000;
+  backdrop-filter: saturate(180%) blur(5px) !important;
+  background: hsla(0,0%,100%,.8);
+  box-shadow: inset 0 -1px 0 0 #ffffff;
+  transform: translateZ(0);
 }

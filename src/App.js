@@ -14,7 +14,7 @@ import Arabic from "./components/translate/ar.json";
 import English from "./components/translate/en.json";
 import HomePage from "./components/HomePage";
 import About from "./components/aboutUs";
-
+import PricesList from "./components/pricesListCopy";
 class App extends Component {
   constructor() {
     super();
@@ -53,11 +53,15 @@ class App extends Component {
             }
           />
           <Route
-            path="/service"
+            path="/services"
             element={<Service texts={this.state.texts} />}
           />
           <Route
-            path="/rateListPage"
+            path="/price"
+            element={<PricesList texts={this.state.texts} lang={this.state.lang}/>}
+          />
+          <Route
+            path="/rateList"
             element={
               <RateListComp texts={this.state.texts} lang={this.state.lang} />
             }
@@ -82,6 +86,7 @@ class App extends Component {
           <Route path="/footer" element={<Footer texts={this.state.texts} />} />
           <Route path="/about" element={<About texts={this.state.texts} lang={this.state.lang}/>} />
         </Routes>
+        <Footer/>
       </div>
     );
   }

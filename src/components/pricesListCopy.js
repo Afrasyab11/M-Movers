@@ -13,7 +13,7 @@ import fourVilla from "./../images/fourVilla.jpeg";
 import halfTruc from "./../images/halfTruck.jpeg";
 import fullTruck from "./../images/fullTruck.jpeg";
 import secondLast from "./../images/secondLastImage.jpeg";
-export default class RateListComp extends React.Component {
+export default class PricesList extends React.Component {
   componentDidMount() {
     Aos.init({ duration: 1000 });
   }
@@ -29,12 +29,7 @@ export default class RateListComp extends React.Component {
               </div>
             </div>
             <div className="row">
-              <div
-                className="col-sm-12 col-md-4 "
-                data-aos="flip-left"
-                data-aos-easing="ease-out-cubic"
-                data-aos-duration="2000"
-              >
+              <div className="col-sm-12 col-md-4 ">
                 <div className="p-2">
                   <div className="row border rounded">
                     <div className="col-6">
@@ -69,12 +64,7 @@ export default class RateListComp extends React.Component {
                   </div>
                 </div>
               </div>
-              <div
-                className="col-sm-12 col-md-4 "
-                data-aos="flip-left"
-                data-aos-easing="ease-out-cubic"
-                data-aos-duration="2000"
-              >
+              <div className="col-sm-12 col-md-4 ">
                 <div className="p-2">
                   <div className="row border rounded">
                     <div className="col-6">
@@ -458,12 +448,7 @@ export default class RateListComp extends React.Component {
               </div>
             </div>
             <div className="row">
-              <div
-                className="col-sm-12 col-md-4 text-end"
-                data-aos="flip-right"
-                data-aos-easing="ease-out-cubic"
-                data-aos-duration="2000"
-              >
+              <div className="col-sm-12 col-md-4 text-end">
                 <div className="p-2">
                   <div className="row border rounded">
                     <div className="col-6 pt-2 text-center">
@@ -497,12 +482,7 @@ export default class RateListComp extends React.Component {
                   </div>
                 </div>
               </div>
-              <div
-                className="col-sm-12 col-md-4"
-                data-aos="flip-right"
-                data-aos-easing="ease-out-cubic"
-                data-aos-duration="2000"
-              >
+              <div className="col-sm-12 col-md-4">
                 <div className="p-2">
                   <div className="row border rounded">
                     <div className="col-6 pt-2 text-center">

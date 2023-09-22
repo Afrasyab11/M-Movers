@@ -9,7 +9,7 @@ export default class Header extends React.Component {
   };
   render() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-light bg-light text-primary">
+      <nav className="navbar navbar-expand-lg navbar-light  text-primary fixedHeader">
         <span className="navbar-brand ms-2 p-0">
           <img
             className="navbar-brand rounded-circle"
@@ -52,6 +52,16 @@ export default class Header extends React.Component {
                 About
               </Link>
             </li>
+            <li className="nav-item">
+              <Link to="/services" className="nav-link text-primary">
+                Services
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/price" className="nav-link text-primary">
+                Prices
+              </Link>
+            </li>
             <li className="nav-item ">
               <div className="dropdown">
                 <button
@@ -62,7 +72,7 @@ export default class Header extends React.Component {
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  Language
+                  {this.props.lang === "Arabic" ? "Arabic" : "English"}
                 </button>
                 <div
                   className="dropdown-menu "
@@ -95,7 +105,6 @@ export default class Header extends React.Component {
           </ul>
         </div>
       </nav>
-
     );
   }
 }
