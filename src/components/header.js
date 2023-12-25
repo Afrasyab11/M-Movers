@@ -26,6 +26,39 @@ export default class Header extends React.Component {
             style={{ cursor: "pointer" }}
           ></i>
         </span>
+        <div className="dropdown ms-5">
+          <button
+            className="btn btn-primary btn-sm shadow-none"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            {this.props.lang === "Arabic" ? "Arabic" : "English"}
+          </button>
+          <div className="dropdown-menu " aria-labelledby="dropdownMenuButton">
+            <button
+              type="button"
+              className={`btn btn-sm shadow-none rounded-0 form-control ${
+                this.props.lang === "English" ? "btn-primary" : "btn-light"
+              }`}
+              onClick={(e) => this.props.toggleLanguage("English")}
+            >
+              English
+            </button>
+            <br></br>
+            <button
+              type="button"
+              className={`btn btn-sm btn-primary shadow-none form-control rounded-0 ${
+                this.props.lang === "Arabic" ? "btn-primary" : "btn-light"
+              }`}
+              onClick={(e) => this.props.toggleLanguage("Arabic")}
+            >
+              Arabic
+            </button>
+          </div>
+        </div>
         <button
           className="navbar-toggler  shadow-none"
           type="button"
@@ -37,6 +70,7 @@ export default class Header extends React.Component {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
+
         <div
           className="collapse navbar-collapse navbar-toggler-right custom-navbar"
           id="navbarNav"
@@ -61,46 +95,6 @@ export default class Header extends React.Component {
               <Link to="/price" className="nav-link text-primary">
                 Prices
               </Link>
-            </li>
-            <li className="nav-item ">
-              <div className="dropdown">
-                <button
-                  className="btn btn-primary btn-sm shadow-none"
-                  type="button"
-                  id="dropdownMenuButton"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  {this.props.lang === "Arabic" ? "Arabic" : "English"}
-                </button>
-                <div
-                  className="dropdown-menu "
-                  aria-labelledby="dropdownMenuButton"
-                >
-                  <button
-                    type="button"
-                    className={`btn btn-sm shadow-none rounded-0 form-control ${
-                      this.props.lang === "English"
-                        ? "btn-primary"
-                        : "btn-light"
-                    }`}
-                    onClick={(e) => this.props.toggleLanguage("English")}
-                  >
-                    English
-                  </button>
-                  <br></br>
-                  <button
-                    type="button"
-                    className={`btn btn-sm btn-primary shadow-none form-control rounded-0 ${
-                      this.props.lang === "Arabic" ? "btn-primary" : "btn-light"
-                    }`}
-                    onClick={(e) => this.props.toggleLanguage("Arabic")}
-                  >
-                    Arabic
-                  </button>
-                </div>
-              </div>
             </li>
           </ul>
         </div>
