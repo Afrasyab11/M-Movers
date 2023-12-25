@@ -35,7 +35,7 @@ export default class Header extends React.Component {
             aria-haspopup="true"
             aria-expanded="false"
           >
-            {this.props.lang === "Arabic" ? "Arabic" : "English"}
+            {this.props.lang === "Arabic" ? "عربي" : "English"}
           </button>
           <div className="dropdown-menu " aria-labelledby="dropdownMenuButton">
             <button
@@ -55,7 +55,7 @@ export default class Header extends React.Component {
               }`}
               onClick={(e) => this.props.toggleLanguage("Arabic")}
             >
-              Arabic
+              عربي
             </button>
           </div>
         </div>
