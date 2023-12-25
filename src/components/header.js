@@ -18,15 +18,27 @@ export default class Header extends React.Component {
             alt="Logo"
           />
         </span>
-
-        <span className="navbar-brand ms-5 p-0">
-          <i
-            onClick={this.handleClick}
-            className="fa-solid fa-phone-volume fa-beat-fade text-primary fa-1xl"
-            style={{ cursor: "pointer" }}
-          ></i>
-        </span>
-        <div className="dropdown ms-5">
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button
+            type="button"
+            className={`btn btn-sm shadow-none form-control rounded-0 ${
+              this.props.lang === "Arabic" ? "btn-primary" : " btn-outline-primary"
+            }`}
+            onClick={(e) => this.props.toggleLanguage("Arabic")}
+          >
+            عربي
+          </button>
+          <button
+            type="button"
+            className={`btn btn-sm shadow-none rounded-0 form-control ${
+              this.props.lang === "English" ? "btn-primary" : "btn-outline-primary"
+            }`}
+            onClick={(e) => this.props.toggleLanguage("English")}
+          >
+            English
+          </button>
+        </div>
+        {/* <div className="dropdown ms-5">
           <button
             className="btn btn-primary btn-sm shadow-none"
             type="button"
@@ -58,7 +70,15 @@ export default class Header extends React.Component {
               عربي
             </button>
           </div>
-        </div>
+        </div> */}
+        <span className="navbar-brand ms-5 p-0">
+          <i
+            onClick={this.handleClick}
+            className="fa-solid fa-phone-volume fa-beat-fade text-primary fa-1xl"
+            style={{ cursor: "pointer" }}
+          ></i>
+        </span>
+
         <button
           className="navbar-toggler  shadow-none"
           type="button"
