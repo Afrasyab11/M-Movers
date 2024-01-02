@@ -29,7 +29,7 @@ export default class contactComp extends Component {
               </div>
               <div className="mt-2 ps-5">
                 <i className="fa-solid fa-envelope fa-beat"></i>{" "}
-                <span>zkmovers112@gmail.com</span>
+                <span>alzainmovers@gmail.com</span>
               </div>
             </div>
           </div>
